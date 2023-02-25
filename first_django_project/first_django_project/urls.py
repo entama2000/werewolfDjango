@@ -16,9 +16,11 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
-from myapp import views as views
+#from myapp import views as views
+from myapp import my_view
 
 urlpatterns = [
     path("admin/", admin.site.urls),
-    path("views/", views.index, name="index"),
+    #path("views/", views.index, name="index"),
+    path('my-form/', my_view, name='my_view'),
 ]
