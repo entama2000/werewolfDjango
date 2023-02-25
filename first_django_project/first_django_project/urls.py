@@ -17,7 +17,7 @@ from django.contrib import admin
 from django.urls import path
 
 #from myapp import views as views
-from myapp import my_view
+from myapp.views import my_view
 
 urlpatterns = [
     path("admin/", admin.site.urls),
