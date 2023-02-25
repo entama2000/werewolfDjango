@@ -1,4 +1,4 @@
-<form method="POST" action="192.168.86.31:8000/my_view">
+<form method="POST" action="{% url 'my_view' %}">
     {% csrf_token %}
     <label for="my_data">Data:</label>
     <input type="text" name="my_data" id="my_data">
